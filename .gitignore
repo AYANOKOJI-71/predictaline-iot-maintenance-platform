@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node and frontend builds
+node_modules/
+apps/web/node_modules/
+apps/web/dist/
+*.tsbuildinfo
+
+# Local environment and tooling
+.env
+.env.*
+!.env.example
+.DS_Store
+coverage/
