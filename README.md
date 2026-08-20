@@ -100,11 +100,12 @@ GitHub Actions repeats the equivalent checks in separate API and web jobs. The A
 
 The project deliberately does **not** connect to brokers, shop-floor networks, external devices, customer systems, or third-party cloud services. It has no autonomous actuation capability and treats all maintenance output as an explainable demonstration prompt for qualified human review. See the supporting project documentation for technical details:
 
-| Document |
+| Document | Description |
 | --- | --- |
 | [Architecture](docs/ARCHITECTURE.md) | Local operating model, telemetry contract, and scoring flow |
 | [Scenario catalog](docs/SCENARIO_CATALOG.md) | Fixture details and expected scenario behavior |
 | [Safe-use guide](docs/SAFE_USE.md) | Explicit operational boundaries and prohibited uses |
 | [Research notes](docs/RESEARCH_NOTES.md) | Background references for the technology choices |
 | [Demo verification](docs/DEMO-VERIFICATION.md) | Recorded local dashboard verification outcomes |
+
 
