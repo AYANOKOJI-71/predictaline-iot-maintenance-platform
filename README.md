@@ -1,6 +1,6 @@
 # PredictaLine — Local IoT Predictive-Maintenance Platform
 
-PredictaLine is an **interview-ready, local-only IoT predictive-maintenance demonstration**. It turns deterministic synthetic equipment telemetry into explainable maintenance priorities through a FastAPI backend and a React operations console. It is intentionally scoped as a safe portfolio artifact: it accepts only in-process fixture data, has no hardware connectors, and does not initiate external network activity.
+PredictaLine is an **local-only IoT predictive-maintenance demonstration**. It turns deterministic synthetic equipment telemetry into explainable maintenance priorities through a FastAPI backend and a React operations console. It is intentionally scoped as a safe portfolio artifact: it accepts only in-process fixture data, has no hardware connectors, and does not initiate external network activity.
 
 > **Demonstration boundary:** PredictaLine is not a production safety system and must not be used to operate, control, or make autonomous maintenance decisions for real equipment.
 
@@ -100,7 +100,7 @@ GitHub Actions repeats the equivalent checks in separate API and web jobs. The A
 
 The project deliberately does **not** connect to brokers, shop-floor networks, external devices, customer systems, or third-party cloud services. It has no autonomous actuation capability and treats all maintenance output as an explainable demonstration prompt for qualified human review. See the supporting project documentation for technical details:
 
-| Document | Purpose |
+| Document |
 | --- | --- |
 | [Architecture](docs/ARCHITECTURE.md) | Local operating model, telemetry contract, and scoring flow |
 | [Scenario catalog](docs/SCENARIO_CATALOG.md) | Fixture details and expected scenario behavior |
@@ -108,6 +108,3 @@ The project deliberately does **not** connect to brokers, shop-floor networks, e
 | [Research notes](docs/RESEARCH_NOTES.md) | Background references for the technology choices |
 | [Demo verification](docs/DEMO-VERIFICATION.md) | Recorded local dashboard verification outcomes |
 
-## Portfolio talking points
-
-PredictaLine is designed to help explain a complete, defensible engineering workflow in an interview: define a safe operating boundary; model telemetry with typed contracts; create deterministic fixtures; combine anomaly detection with human-readable evidence; present the result in an operations dashboard; and enforce quality with automated checks. Its local-only design also makes it straightforward for a reviewer to run without credentials or paid infrastructure.
